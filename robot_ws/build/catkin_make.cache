@@ -1,0 +1,2 @@
+abot_bringup:abot_imu:abot_model:abot_tool_pkg:lidar_filters:robot_shoot:robot_slam:track_tag
+-DCATKIN_DEVEL_PREFIX=/home/abot/UnmannedCarRaces/UnionTmp2/robot_ws/devel -DCMAKE_INSTALL_PREFIX=/home/abot/UnmannedCarRaces/UnionTmp2/robot_ws/install -G Unix Makefiles

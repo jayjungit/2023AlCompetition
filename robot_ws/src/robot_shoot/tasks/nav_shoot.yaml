@@ -1,0 +1,79 @@
+# =====[ 目标 A 点任务队列配置 ]=====================
+- type: "pose_task"     # 自主巡航 
+  x: 0.98
+  y: -0.42
+  yaw_degrees: 0
+  describe: "自主巡航到目标 A 点"
+
+- type: "correct_task"  # 纠正位置
+  vel: 0.05
+  right: 0.60
+  rear: 1.35
+  tolerance_error_right: 0.03
+  tolerance_error_rear: 0.03
+  describe: "纠正目标 A 点位置"
+
+- type: "shoot_task"    #  射击目标
+  tag_id: 2
+  yaw_th: 0.03
+  yaw_err: -0.01
+  describe: "射击 A 点的目标靶标"
+
+# # =====[ 目标 B 点任务队列配置 ]=====================
+- type: "pose_task"     # 自主巡航
+  x: 0.98
+  y: -1.68
+  yaw_degrees: 0
+  describe: "自主巡航到目标 B 点"
+
+- type: "correct_task"  # 纠正位置
+  vel: 0.05
+  right: 0.58
+  rear: 1.33
+  tolerance_error_right: 0.03
+  tolerance_error_rear: 0.03
+  describe: "纠正目标 B 点位置"
+
+- type: "shoot_task"    #  射击目标
+  tag_id: 0
+  yaw_th: 0.03
+  yaw_err: 0.02
+  describe: "射击 B 点的目标靶标"
+
+# # =====[ 目标 C 点任务队列配置 ]=====================
+- type: "pose_task"     # 自主巡航
+  x: 0.95
+  y: -2.90
+  yaw_degrees: 0
+  describe: "自主巡航到目标 C 点"
+
+- type: "correct_task"  # 纠正位置
+  vel: 0.05
+  right: 0.60
+  rear: 1.35
+  tolerance_error_right: 0.03
+  tolerance_error_rear: 0.03
+  describe: "纠正目标 C 点位置"
+
+- type: "shoot_task"    #  射击目标
+  tag_id: 2
+  yaw_th: 0.03
+  yaw_err: -0.01
+  describe: "射击 C 点的目标靶标"
+
+# # =====[ 目标 E 点任务队列配置 ]=====================
+- type: "pose_task"     # 自主巡航
+  # x: 0.70
+  # y: -3.00
+  x: 0.95
+  y: -2.90
+  yaw_degrees: 0
+  describe: "旋转小车为正向"
+
+- type: "correct_task"  # 纠正位置
+  vel: 0.1
+  right: 0.28
+  rear: 0.36
+  tolerance_error_right: 0.05
+  tolerance_error_rear: 0.05
+  describe: "返回终点"
